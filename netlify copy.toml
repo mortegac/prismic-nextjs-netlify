@@ -1,0 +1,29 @@
+
+
+[build]
+  publish = "dist"
+  command = "npm run export"
+  
+[build]
+  command = "yarn build"
+  publish = "packages/web/out"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+
+  
+
+[build]
+  command   = ""
+  functions = "out_functions"
+  publish   = "out_publish"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+  
+[build]
+    publish = ".next"
+
+[[plugins]]
+package = "@netlify/plugin-nextjs"
