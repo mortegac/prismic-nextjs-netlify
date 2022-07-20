@@ -49,8 +49,10 @@ jobs:
       - name: 👓 Netlify Preview URL
         uses: unsplash/comment-on-pr@master
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GA_TOKEN }}
           OUTPUT: "This pull request is being automatically deployed to Netlify.\n\n🔍 Inspect: ${{ steps.deploy-netlify.outputs.NETLIFY_LOGS_URL }}\n✅ Preview: ${{ steps.deploy-netlify.outputs.NETLIFY_URL }}"
         with:
           msg: ${{ env.OUTPUT }}
           check_for_duplicate_msg: false
+
+          
