@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  target: 'serverless',
+  target: "serverless",
   reactStrictMode: true,
-  serverless:false,
   swcMinify: true,
   compiler: {
     removeConsole: true,
