@@ -28,7 +28,7 @@ jobs:
         run: yarn install
 
       - name: 📦 Build project
-        run: yarn build --if-present
+        run: yarn build
 
       # - name: 🧹 Run lint
       #   run: npm run lint
