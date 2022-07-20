@@ -24,10 +24,11 @@ jobs:
           node-version: 14.x
 
       - name: 🧰 Install dependencies
-        run: npm ci
+        #run: npm ci
+        run: yarn install
 
       - name: 📦 Build project
-        run: npm run build --if-present
+        run: yarn build --if-present
 
       # - name: 🧹 Run lint
       #   run: npm run lint
